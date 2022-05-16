@@ -43,7 +43,7 @@ ul {
 .container {
   margin: 0 auto;
   width: 1200px;
-  /* outline: 2px solid #2196f3; */
+  outline: 2px solid #2196f3;
   padding: 0 15px;
 }
 .section {
@@ -173,6 +173,8 @@ ul {
     ),
     url(../images/Img.jpg);
   background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: 50% 50%;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -354,10 +356,12 @@ button {
   color: var(--primary-wight-color);
   background-color: var(--accent-color);
   font-family: inherit;
-  font-style: 700;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+
+  cursor: pointer;
 }
 
 .button-primary {
@@ -370,11 +374,13 @@ button {
     0px 3px 1px 0px #0000001a;
 
   font-family: inherit;
-  font-style: 700;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   text-align: center;
+
+  cursor: pointer;
 }
 
 .button-secondary {
@@ -386,11 +392,12 @@ button {
   background-color: var(--secondary-botton-color);
 
   font-family: inherit;
-  font-style: 700;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   text-align: center;
+  cursor: pointer;
 }
 
 .button-secondary:hover,
@@ -444,7 +451,7 @@ button {
 }
 
 .client .item {
-  width: calc((100%- 150px) / 6);
+  width: calc((100% - 150px) / 6);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -531,9 +538,13 @@ address {
   justify-content: center;
 }
 
+.filter {
+  margin-bottom: 50px;
+}
+
 .filter-item {
   margin-right: 8px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .filter-item:last-child {
   margin-right: 0;
@@ -552,13 +563,16 @@ address {
   margin-bottom: 30px;
 }
 .portfolio .item {
-  width: calc((100%- 60px) / 3);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.portfolio .item:hover,
-.portfolio .item:focus {
+.portfolio-link {
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
     0px 1px 1px 0px #0000001f;
 }
